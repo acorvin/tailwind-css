@@ -4,18 +4,99 @@
 		<meta charset="UTF-8"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 		<link rel="stylesheet" href="style.css"/>
-		<title>Tailwind CSS</title>
+		<title>Udesi</title>
 	</head>
-	<body class="bg-blue-700">
-		<div class="container">
-			<h1 class="text-white">Hallo Tailwind!</h1>
-		</div>
-		<div class="container">
-			<button class="bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 rounded">
-				Tailwind
-			</button>
+	<body>
+		<!-- Navbar -->
+		<nav class="flex items-center justify-between flex-wrap bg-blue-600 p-6">
+			<div class="flex items-center flex-shrink-0 text-white mr-6">
+				<span class="font-bold text-xl">Udesi</span>
+			</div>
 
-			<button class="btn btn-blue">Button</button>
+			<div class="w-full block flex-grow sm:flex sm:items-center sm:w-auto">
+				<div class="text-sm sm:flex-grow">
+					<a href="#" class="block mt-4 sm:inline-block sm:mt-0 text-teal-200 hover:text-white mr-4">
+						Courses
+					</a>
+					<a href="#" class="block mt-4 sm:inline-block sm:mt-0 text-teal-200 hover:text-white mr-4">
+						About Us
+					</a>
+					<a href="#" class="block mt-4 sm:inline-block sm:mt-0 text-teal-200 hover:text-white">
+						Contact
+					</a>
+				</div>
+				<div>
+					<a href="#" class="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-blue-500 hover:bg-white mt-4 md:mt-0">Login</a>
+				</div>
+			</div>
+		</nav>
+
+		<!-- Hero -->
+		<div class="py-20 px-20" style="background: linear-gradient(90deg, #000428 0%, #004e92 100%)">
+			<div class="flex mb-4">
+				<div class="w-1/2">
+					<h2 class="text-4xl font-bold mb-2 text-white">
+						Design your pathway to tomorrow
+					</h2>
+					<h3 class="text-2xl mb-8 text-gray-200">
+						Your only limit is your imagination
+					</h3>
+					<button class="bg-white font-bold rounded py-4 px-8 shadow-lg uppercase tracking-wider">
+						Start Today
+					</button>
+				</div>
+				<div class="w-1/2">
+					<img class="object-contain" src="./img/butterfly.png" alt="Creativity"/>
+				</div>
+			</div>
+		</div>
+
+		<!-- Features -->
+		<section class="container mx-auto px-6 p-10">
+			<h2 class="text-4xl font-bold text-center text-gray-800 mb-8">
+				Learning Paths
+			</h2>
+			<!-- Feature 1 -->
+			<div class="flex items-center flex-wrap mb-20">
+				<div class="w-full md:w-1/2">
+					<h4 class="text-3xl text-gray-800 font-bold mb-3">Web Design</h4>
+					<p class="text-gray-600 mb-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, nemo molestias. Doloremque nobis ad atque fuga provident, esse, vel laborum deserunt dolore velit recusandae iure eius suscipit modi vero nihil.</p>
+				</div>
+				<div class="w-full md:w-1/2">
+					<img class="object-contain" src="./img/web.png" alt="website"/>
+				</div>
+			</div>
+
+			<!-- Feature 2 -->
+			<div class="flex items-center flex-wrap mb-20">
+				<div class="w-full md:w-1/2">
+					<img src="./img/digital.png" alt="Art"/>
+				</div>
+				<div class="w-full md:w-1/2 pl-10">
+					<h4 class="text-3xl text-gray-800 font-bold mb-3">Art Design</h4>
+					<p class="text-gray-600 mb-8">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi explicabo modi voluptatibus non animi consectetur, dolore quo magni sed. Id?</p>
+				</div>
+			</div>
+
+			<!-- Feature 3 -->
+			<div class="flex items-center flex-wrap mb-20">
+				<div class="w-full md:w-1/2">
+					<h4 class="text-3xl text-gray-800 font-bold mb-3">Start Freelancing</h4>
+					<p class="text-gray-600 mb-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. A numquam, praesentium quisquam odit soluta omnis alias necessitatibus officiis optio explicabo magni sapiente hic amet adipisci mollitia cum quas fuga dignissimos totam modi asperiores! Ad fuga enim, accusantium suscipit delectus quaerat.</p>
+				</div>
+				<div class="w-full md:w-1/2">
+					<img src="./img/freelance.png" alt="Freekance"/>
+				</div>
+			</div>
+		</section>
+
+		<!-- Footer -->
+		<div class="flex bg-gray-800 p-2">
+			<div class="flex-1 text-center px-4 py-2 m-2"></div>
+			<div class="flex-1 text-white text-center px-4 py-2 m-2">&copy;2020
+				<p>Udesi Academy</p>
+			</div>
+			<div class="flex-1 text-center px-4 py-2 m-2"></div>
 		</div>
 	</body>
 </html>
